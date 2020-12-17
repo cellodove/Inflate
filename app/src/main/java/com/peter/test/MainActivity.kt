@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
     private fun setListener() {
         binding.apply {
             button.setOnClickListener {
-                var inflater : LayoutInflater = getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
+                var inflater : LayoutInflater = LayoutInflater.from(this@MainActivity)
                 inflater.inflate(R.layout.sub1,container,true)
             }
         }
